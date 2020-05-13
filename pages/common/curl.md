@@ -24,9 +24,9 @@
 
 `curl -H {{'X-My-Header: 123'}} -X {{PUT}} {{http://example.com}}`
 
-- Send data in JSON format, specifying the appropriate content-type header:
+- Send data from JSON file, specifying the appropriate content-type header:
 
-`curl -d {{'{"name":"bob"}'}} -H {{'Content-Type: application/json'}} {{http://example.com/users/1234}}`
+`curl -d {@filename.json} -H {{'Content-Type: application/json'}} {{http://example.com/users/1234}}`
 
 - Pass a user name and password for server authentication:
 
